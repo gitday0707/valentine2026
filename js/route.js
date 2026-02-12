@@ -45,6 +45,7 @@ function afterScreenLoaded(screenName) {
   }
   if (screenName === "screen-3") {
     initHomeScreen();
+    enableLockScreen();
   }
   if (screenName === "messenger") {
     initMessengerScreen(); // ⭐ BẮT BUỘC
@@ -292,6 +293,15 @@ function enableBackToHome() {
   back.addEventListener("click", (e) => {
     e.preventDefault();
     navigate("screen-3");
+  });
+}
+function enableLockScreen() {
+  const photosBtn = document.querySelector(".settings");
+  if (!photosBtn) return;
+
+  photosBtn.addEventListener("click", (e) => {
+    e.preventDefault();      // ❗ chặn reload / mở link
+    navigate("screen-1");    // 👉 quay về lock screen
   });
 }
 
