@@ -311,7 +311,7 @@ function initPhotosScreen() {
   let zoomed = false;
 
   /* ===== LOAD GALLERY ===== */
-  fetch("/data/gallery.json")
+  fetch("data/gallery.json")
     .then((res) => res.json())
     .then((files) => {
       filesData = files;
