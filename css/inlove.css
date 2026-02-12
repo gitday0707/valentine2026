@@ -1,0 +1,138 @@
+.screen.inlove {
+  max-width: 430px;
+  min-width: 320px;
+  width: 100vw;
+  height: 740px;
+
+  margin: 0 auto;
+  background: #f7cce8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== BACK HOME ===== */
+.screen.inlove .back-home {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 20;
+
+  font-size: 26px;
+  color: #f092d6;
+  text-decoration: none;
+
+  padding: 6px 10px;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+.screen.inlove .back-home:active {
+  background: rgba(223, 67, 173, 0.12);
+}
+/* Canvas nhỏ hơn màn hình để tim vừa mắt */
+#pinkboard {
+  left: 35px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  max-width: 360px;
+  max-height: 360px;
+}
+/* ===== COUNT TEXT ===== */
+.love-count {
+  position: absolute;
+  inset: 0;                 /* 🔥 phủ toàn bộ box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;     /* không cản canvas */
+  text-align: center;
+  top: -380px;
+}
+
+.love-count span {
+  font-size: 45px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1;
+}
+.love-count small{
+    color: #f768dd;
+}
+
+.description_love{
+    margin-top: 350px;
+    display: flex;
+    gap: 100px;
+    text-align: center;
+}
+.description_love .person{
+    display: flex;
+    flex-direction: column;
+}
+.description_love .person img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.description_love .person p{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+.inlove .heart {
+  position: absolute;
+  top: 560px;
+  left: 190px;
+  width: 40px;
+  height: 36px;
+  background: #ff2d55;
+  transform: rotate(-45deg);
+  animation: animate 1s infinite ease-in-out;
+}
+
+/* 2 nửa tim */
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 36px;
+  background: #ff2d55;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -20px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 20px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(-45deg) scale(1);
+  }
+
+  30% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+
+  60% {
+    transform: rotate(-45deg) scale(1.2);
+  }
+
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+}

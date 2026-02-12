@@ -1,0 +1,103 @@
+
+@font-face {
+  font-family: "SF Compact Display";
+  src: url("/fonts/SFCompactDisplay-Medium.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Compact Display";
+  src: url("/fonts/SFCompactDisplay-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Compact Display";
+  src: url("/fonts/SFCompactDisplay-Regular.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Compact Display";
+  src: url("/fonts/SFCompactDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+*{
+    font-family:
+    "SF Compact Display",
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    sans-serif;
+}
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.date_time {
+  margin-top: 50px;
+  text-align: center;
+}
+.date_time p {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+}
+.date_time h1 {
+  margin-top: 0;
+  color: #ffffff;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+}
+.bottom1{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.bottom_icons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 0px;
+}
+
+.bottom_icons .icon_shape {
+  height: 65px;
+  width: 65px;
+  display: grid;
+  place-items: center;
+  border: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.bottom_icons .icon_shape img {
+  filter: invert(1);
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.bottom_icons .icon_shape i {
+  font-size: 25px;
+  color: #ffffff;
+}
+.screen .unlock{
+font-size: 20px;
+text-decoration: none;
+color: #ffffff;
+cursor: pointer;
+}
