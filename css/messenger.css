@@ -1,6 +1,6 @@
 .messenger {
   background-color: #f9dbe9;
-  background-image: url("/imgs/backgroundmess.jpg");
+  background-image: url("./imgs/backgroundmess.jpg");
   display: flex;
   flex-direction: column;
   height: 700px;
