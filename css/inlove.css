@@ -59,7 +59,7 @@
 .love-count span {
   font-size: 45px;
   font-weight: 600;
-  color: #111;
+  color: #f768dd;
   line-height: 1;
 }
 .love-count small{
@@ -84,6 +84,7 @@
 .description_love .person p{
     font-size: 30px;
     font-weight: 300;
+    color: #f768dd;
 }
 
 
